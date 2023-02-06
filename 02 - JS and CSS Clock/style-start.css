@@ -1,4 +1,21 @@
-.clock--wrapper{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+}
+#clockDate{
     background-color: rgb(7, 7, 70);
-    font-family:'Arial Narrow Bold', sans-serif;
+    border-radius: 4px;
+    width: fit-content;
+    
+}
+
+#clock{
+    background-color: rgb(7, 7, 70) ;
+    color: aqua;
+    border-radius: 4px;
+    width: fit-content;
+    font-size: 100px;
 }
