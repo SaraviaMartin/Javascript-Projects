@@ -5,5 +5,5 @@ function startTime(){
     const sec = today.getSeconds();
 
     document.getElementById('clock').innerHTML = hour + ":" + min + ":" + sec;
-    
+    var time = setTimeout(function(){ startTime() }, 500);
 }
