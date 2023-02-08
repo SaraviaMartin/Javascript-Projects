@@ -1,12 +1,12 @@
 :root{
     --coloracion: #030000 ;
-    --espacio: 40px
-    --saturacion: 20px;
+    --espacio: 10px
+    --saturacion: 10px;
 }
 img{
     margin-top: 50px;
     padding: var(--espacio);
-    filter: var(--saturacion);
+    filter: var((--saturacion));
     background-color: var(--coloracion);
 }
 .h1{
@@ -16,5 +16,6 @@ body{
     background-color: crimson;
     display: grid;
     place-items: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 
