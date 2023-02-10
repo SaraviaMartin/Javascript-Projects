@@ -20,3 +20,9 @@ const inventors = [
     'Berne, Eric', 'Berra, Yogi', 'Berry, Wendell', 'Bevan, Aneurin', 'Ben-Gurion, David', 'Bevel, Ken', 'Biden, Joseph', 'Bennington, Chester', 'Bierce, Ambrose',
     'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
   ];
+
+    // Array.prototype.filter()
+  // 1. Filter the list of inventors for those who were born in the 1500's
+  const nuevoArray = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1599));
+  
+  console.log(nuevoArray);
