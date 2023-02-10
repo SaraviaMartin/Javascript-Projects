@@ -26,3 +26,10 @@ const inventors = [
   const nuevoArray = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1599));
   
   console.log(nuevoArray);
+
+    // Array.prototype.map()
+  // 2. Give us an array of the inventor first and last names
+
+  const fullName = inventors.map(inventor => `${inventor.first}` + " " +`${inventor.last}`);
+
+  console.log(fullName);
