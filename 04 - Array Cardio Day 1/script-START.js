@@ -38,3 +38,13 @@ const inventors = [
   // 3. Sort the inventors by birthdate, oldest to youngest
   const ordenado = inventors.sort((a, b) => (a.year > b.year ? 1 : -1));
   console.log(ordenado);
+
+   // Array.prototype.reduce()
+  // 4. How many years did all the inventors live?
+  const añosTotales = inventors.reduce((total, inventor) => {
+    return total + (inventor.passed - inventor.year);
+  },0);
+  console.log(añosTotales);
+
+  // 5. Sort the inventors by years lived
+  
