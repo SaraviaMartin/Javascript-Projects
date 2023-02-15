@@ -47,4 +47,13 @@ const inventors = [
   console.log(añosTotales);
 
   // 5. Sort the inventors by years lived
-  
+  //Inventores mas viejos
+  //cantidad de años vividos === año de muerte - Año de nacimiento
+  //primero tengo que ver cuantos años vivio cada uno
+  //despues tengo que ir ordenando de menor a mayor
+  const inventoresMasViejos = inventors.sort(function (a, b){
+    const siguiente = a.passed - a.year;
+    const ultimo = b.passed - b.year;
+    return siguiente > ultimo ? -1 : 1;
+  });
+  console.log(inventoresMasViejos);
